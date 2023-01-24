@@ -12,19 +12,19 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
 
         td{
             border: 1px solid black;
             border-collapse: separate;
+            text-align: center;
+            vertical-align: middle;
         }
 
-        tr.linha{
-            background-color: gray;
-        }
-
-        td.dado{
+        .numero{
+            text-align: right;
             background-color: yellow;
         }
     </style>
@@ -37,16 +37,16 @@
             <td>C1</td>
         </tr>
 
-        <tr class="linha">
+        <tr>
             <Td>A2</Td>
             <Td>B2</Td>
-            <Td>C2</Td>
+            <Td class="numero">C2</Td>
         </tr>
 
         <tr>
             <Td>A3</Td>
-            <Td class="dado">B3</Td>
-            <Td>C3</Td>
+            <Td>B3</Td>
+            <Td class="numero">C3</Td>
         </tr>
     </table>
 </body>
