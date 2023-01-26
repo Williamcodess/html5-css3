@@ -10,17 +10,23 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1{
+        margin-top: 50px;
+        text-align: center;
+}
+
         table{
-            width: 600px;
+            width: 800px;
             border-collapse: collapse;
             margin: auto;
+            box-shadow:5px 5px 30px rgba(0, 0, 0, 0.747);
         }
 
         caption{
             color: white;
             background-color: gray;
             padding: 10px;
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: bold;
         }
 
@@ -28,27 +34,26 @@
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+            font-size: 1.2em;
         }
 
-        .alinhamento{
-            margin-top: 50px;
-        }
     </style>
 </head>
 <body>
-    <table class="alinhamento">
-        <caption>Relação de Preferências no audiovisual</caption>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
         <thead>
             <tr>
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes favoritos</th>
+                <th scope="colgroup" colspan="3">Filmes favoritos</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -67,7 +72,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Breno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
