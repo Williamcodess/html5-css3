@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+    <style>
+        .input:hover{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="iusu">Usuário:</label>
+                <input type="text" name="usu" id="iusu" required size="20" placeholder="Nome do usuário" minlength="4" maxlength="30" autocomplete="username">
+        </div>
+
+        <div>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen"id="isen" required minlength="8" maxlength="30" size="20" placeholder="Mínimo 8 caracteres" autocomplete="current-password">
+        </div>
+
+        <div class="botao">
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+    </form>
+
+</body>
+</html>
