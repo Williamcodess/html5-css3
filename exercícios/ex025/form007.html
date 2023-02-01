@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>2- Exemplo de Formulário</h1>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post">
 
         <label for="iestado">Estado</label>
         <select name="estado" id="iestado">
@@ -24,6 +24,28 @@
                 <option value="CE">Ceará</option>
             </optgroup>
     </select>
+
+    
+    <p>
+        <label for="iprofi">Profissão</label>
+        <input type="text" name="profi" id="iprofi" list="istprof" placeholder="Desenvolvedor">
+        <datalist id="istprof">
+            <option>Administrador</option>
+            <option>Densenvolvedor</option>
+            <option>Contabilidade</option>
+            <option>Professor</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imsg">Mensagem: </label><br>
+        <textarea name="msg" id="imsg" cols="50" rows="10"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
     </form>
 </body>
 </html>
