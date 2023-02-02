@@ -1,3 +1,23 @@
 @charset "UTF-8";
 
 /*Orietação para todas as screen*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #233eff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 0px #0b13509f;
+    padding: 10px;
+    text-align: center;
+}
