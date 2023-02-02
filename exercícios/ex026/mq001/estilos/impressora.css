@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Estilo para impressora*/
+
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+article{
+    width: 100vw;
+}
+
+article::after{
+    content: "Esse artigo foi impresso no site de william codess";
+}
+
+
+menu{
+    display: none;
+}
