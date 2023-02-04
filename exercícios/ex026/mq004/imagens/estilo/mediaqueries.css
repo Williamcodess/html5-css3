@@ -2,6 +2,25 @@
 
 /*Media querie para cada versão de tela*/
 
-@media screen {
+@media print {/*IMPRESSÃO*/
+    
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px){/*TABLET*/
+
+    body{
+        background: black url(../back-tablet.jpg) no-repeat;
+    }
+    
+    img#phone{
+        display: none;
+    }
+
+    img#tablet{
+        display: block;
+        margin: auto;
+    }
+
     
 }
