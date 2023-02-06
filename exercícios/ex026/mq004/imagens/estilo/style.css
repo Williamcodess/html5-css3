@@ -2,6 +2,40 @@
 
 /*Media querie para mobile first*/
 
+@media print {/*IMPRESSORA*/
+    *{ font-family: Arial, Helvetica, sans-serif;
+    }
+    main{
+        position: relative;
+        border: 2px solid black;
+        padding: 50px;
+    }
+
+    main>h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after{
+        position: absolute;
+        left: 50px;
+        font-size: 2em;
+        text-align: center;
+        text-decoration: overline;
+        content: "Este site foi feito por 'william codess'.";
+    }
+
+    img#print{
+        display: block;
+        margin: auto;
+    }
+
+    main>img#phone{
+        display:none;
+    }
+}
+
+
 *{
     margin: 0px;
     padding: 0px;

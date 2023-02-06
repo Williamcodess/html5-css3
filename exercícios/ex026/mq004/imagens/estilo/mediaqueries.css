@@ -2,11 +2,6 @@
 
 /*Media querie para cada versão de tela*/
 
-@media print {/*IMPRESSÃO*/
-    
-
-}
-
 @media screen and (min-width:768px) and (max-width:992px){/*TABLET*/
 
     body{
@@ -21,6 +16,36 @@
         display: block;
         margin: auto;
     }
+}
 
-    
+@media screen and (min-width:992px) and (max-width:1200px){ /*PC*/
+
+    body{
+        background: black url(../back-pc.jpg) no-repeat;
+        background-size: cover;
+    }
+    img#pc{
+        display: block;
+        margin: auto;
+    }
+
+    img#phone,img#tablet{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px){ /*TV*/
+    body{ 
+        background: black url(../back-tv.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    img#tv{
+        display: block;
+        margin: auto;
+    }
+
+    img#phone,img#tablet,img#pc{
+        display: none;
+    }
 }
