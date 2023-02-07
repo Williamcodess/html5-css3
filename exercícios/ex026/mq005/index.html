@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>        
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 01</a></li>
                 <li><a href="#">Opção 02</a></li>
@@ -22,6 +24,7 @@
     </header>
     <main>
         <article>
+            <h2>Testando Media Query</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque labore reiciendis deleniti beatae animi dolorem nesciunt dolor, iste provident quam ab impedit quisquam hic! Eum eligendi et ullam ex ipsa.
             </p>
@@ -39,5 +42,15 @@
             </p>
         </article>
     </main>
+
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
