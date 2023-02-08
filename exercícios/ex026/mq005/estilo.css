@@ -57,12 +57,12 @@ menu > ul >li >a:hover{
 }
 
 article{
-    width: 450px;
+    width: 90vw;
     margin: auto;
     background-color: white;
     margin-top: 10px;
     margin-bottom: 50px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.507);
 }
